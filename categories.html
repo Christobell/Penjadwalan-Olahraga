@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="css/admin.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+	<title>SportSchedule | Schedule</title>
+</head>
+
+<body>
+	<div class="sidebar">
+		<div class="logo-details">
+			<i class="bx bx-football"></i> 
+			<span class="logo_name">SportScheduler</span>
+		</div>
+		<ul class="nav-links">
+			<li>
+				<a href="Admin.html" class="active">
+					<i class="bx bx-grid-alt"></i>
+					<span class="links_name">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="categories.html">
+					<i class="bx bx-calendar"></i> 
+					<span class="links_name">Sports Schedule</span>
+				</a>
+			</li>
+			<li>
+				<a href="matches.html">
+					<i class="bx bx-list-ul"></i>
+					<span class="links_name">Matches</span>
+				</a>
+			</li>
+			<li>
+				<a href="Login.html">
+					<i class="bx bx-log-out"></i>
+					<span class="links_name">Log out</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<section class="home-section">
+		<nav>
+			<div class="sidebar-button">
+				<i class="bx bx-menu sidebarBtn"></i>
+			</div>
+			<div class="profile-details">
+				<span class="admin_name">SportScheduler Admin</span>
+			</div>
+		</nav>
+
+		<div class="home-content">
+			<h3>Sports Schedule</h3>
+			<button type="button" class="btn btn-tambah">
+				<a href="schedule-entry.html">Tambah Jadwal</a> 
+			</button>
+			<table class="table-data">
+				<thead>
+					<tr>
+						<th scope="col" style="width: 20%"> Nama</th>
+						<th>Olahraga</th>
+						<th scope="col" style="width: 20%">Deskripsi</th>
+						<th scope="col" style="width: 15%">Tanggal</th>
+						<th scope="col" style="width: 30%">Kegiatan</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Fitri Saputro </td> 
+						<td>Sepak Bola</td>
+						<td>Latihan Pertantingan Sepak Bola antara Team A dan Team B </td> 
+						<td>12 oktober 2022</td> 
+						<td>
+							<button class="btn-edit" onclick="editSchedule()">Edit</button> 
+							<button class="btn-delete" onclick="deleteSchedule()">Hapus</button> 
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+</body>
+
+</html>
